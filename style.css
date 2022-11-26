@@ -9,7 +9,7 @@ body {
     font-family: "Inter";
     margin-top: 95px;
     margin-left: 95px;
-    width: 1600px;
+    width: 80%;
 }
 
 h1 {
@@ -30,7 +30,7 @@ font-weight: light;
 p.opr {
     font-weight: regular;
     margin-left: inline-block;
-    width: 1500px;
+    width: 80%px;
 }
 
 img.opa {
