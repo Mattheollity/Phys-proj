@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Inter', sans-serif;
+}
+
+html { overflow-x: hidden; }
+
+body {
+    type: block;
+    font-family: "Inter";
+    margin-top: 95px;
+    margin-left: 95px;
+    width: 1600px;
+}
+
+h1 {
+font-size: 62px;
+font-weight: bold;
+}
+
+h2 {
+font-size: 48px;
+font-weight: bold;
+}
+
+p {
+font-size: 36px;
+font-weight: light;
+}
+
+p.opr {
+    font-weight: regular;
+    margin-left: inline-block;
+    width: 1500px;
+}
+
+img.opa {
+    width: 20px;
+    height:70px;
+    margin-right: 55px;
+}
+
+div.fl {
+display:flex;
+align-items: center;
+}
