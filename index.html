@@ -9,9 +9,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Что такое электромагнитное излучение и почему не надо его бояться?</h1>
-    <!--<h2>Понимание превыше всего</h2>
-        <p>/////</p>-->
+<h1>Что такое электромагнитное излучение и почему не надо его бояться?</h1>
+<button id="bt1" class="bt1 active" onclick="return fun1()">Основной текст</button>
+        <button id="bt2" class="bt2" onclick="return fun2()">Дополнительные источники</button>
+    <div class="main" id="d1">
     <h2>Электромагнитное поле и излучение</h2>
     <div class="fl">
         <img class="opa" src="./src/pics/OPA.png">
@@ -89,11 +90,42 @@
         соблюдать простейшие правила: не обниматься с телефоном и компьютером весь день, не засыпать на Wi-Fi роутере,
         не прилипать лицом к телевизору, держать дистанцию с микроволновой печью. Желательно читать инструкции.</p>
     <p>Отрывок из СанПин</p>
+
     <img src="./src/pics/table2.png">
 
+</div>
+<div class="links hide" id="d2">
 
+    <h2>Полезные ссылки</h2>
+    <ol>
+        <li><a href="https://dzen.ru/media/inznan/fizika-v-poliah-chem-oni-iavliaiutsia-i-iz-chego-sostoiat-630218241ae01841c36e6c56">Физика в полях: чем они являются и из чего состоят?</a> - простая статья на Яндекс Дзене</li>
+        <li><a href="https://docs.yandex.ru/docs/view?tm=1669733361&tld=ru&lang=ru&name=elementy_teorii_polya.pdf&text=понятие%20поля%20в%20физике%20книги&url=https%3A%2F%2Fischanow.com%2Fwp-content%2Fuploads%2F2020%2F05%2Felementy_teorii_polya.pdf&lr=10676&mime=pdf&l10n=ru&sign=9c3888f6092dbcd000ffb78ab6e462ee&keyno=0&nosw=1&serpParams=tm%3D1669733361%26tld%3Dru%26lang%3Dru%26name%3Delementy_teorii_polya.pdf%26text%3D%25D0%25BF%25D0%25BE%25D0%25BD%25D1%258F%25D1%2582%25D0%25B8%25D0%25B5%2B%25D0%25BF%25D0%25BE%25D0%25BB%25D1%258F%2B%25D0%25B2%2B%25D1%2584%25D0%25B8%25D0%25B7%25D0%25B8%25D0%25BA%25D0%25B5%2B%25D0%25BA%25D0%25BD%25D0%25B8%25D0%25B3%25D0%25B8%26url%3Dhttps%253A%2F%2Fischanow.com%2Fwp-content%2Fuploads%2F2020%2F05%2Felementy_teorii_polya.pdf%26lr%3D10676%26mime%3Dpdf%26l10n%3Dru%26sign%3D9c3888f6092dbcd000ffb78ab6e462ee%26keyno%3D0%26nosw%3D1">ФИЗИЧЕСКИЕ ПОЛЯ Материалистическая концепция классической физики</a> - короткая книга для людей с хорошим математическим аппаратом</li>
+        <li><a href="https://www.frontiersin.org/articles/10.3389/fpubh.2021.691880/full">Effects of Radiofrequency Electromagnetic Radiation on Neurotransmitters in the Brain</a> - статья на тему влияния ЭМИ на нейротрансмиттеры</li>
+        <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0891061815000952?via%3Dihub">Electromagnetic field and brain development</a> - статья на тему влияния ЭМИ на развитие мозга</li>
+        <li><a href="https://www.semanticscholar.org/paper/Acute-effects-of-radiofrequency-electromagnetic-by-Zhang-Sumich/ee4f00afea0b82f842fca60a1b18dda35aea95aa">Acute Effects of Radiofrequency
+Electromagnetic Field Emitted by Mobile
+Phone on Brain Function</a> - статья на тему влияния излучения мобильных телефонов на функции мозга</li>
+    </ol>
+</div>
 
-
+<script type="text/javascript">
+    let bt1 = document.getElementById("bt1");
+    let bt2 = document.getElementById("bt2");
+    let d1 = document.getElementById("d1");
+    let d2 = document.getElementById("d2");
+    function fun1() {
+        bt1.classList.add("active");
+        bt2.classList.remove("active");
+        d1.classList.remove("hide");
+        d2.classList.add("hide")
+        }
+    function fun2() {
+        bt2.classList.add("active");
+        bt1.classList.remove("active");
+        d2.classList.remove("hide");
+        d1.classList.add("hide")
+        }
+</script>
 
 </body>
 </html>
