@@ -27,10 +27,20 @@ font-size: 36px;
 font-weight: light;
 }
 
+a {
+color: #5D1369;
+}
+
+li {
+font-size: 36px;
+font-weight: light;
+margin-top: 25px;
+}
+
 p.opr {
     font-weight: regular;
     margin-left: inline-block;
-    width: 80%;
+    width: 80%px;
 }
 
 img.opa {
@@ -42,4 +52,23 @@ img.opa {
 div.fl {
 display:flex;
 align-items: center;
+}
+
+.hide {
+display: none;
+}
+
+button {
+    font-size: 24px;
+font-weight: light;
+margin-right: 50px;
+border: none;
+background: white;
+cursor: pointer;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration-line: underline;
+    color: #5D1369;
 }
